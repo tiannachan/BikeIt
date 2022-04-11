@@ -5,16 +5,16 @@ Our Team name is ____.
 We would like to focus on the social media uses, in particular, on messaging apps such as Line, Kakao, Whatsapp, Facebook Messenger, Instagram Direct, Twitter Direct, WeChat, Telegram, and Skype. 
  
 ## Team Members
-**Yin Ue "Tianna" Chan** 
-<img src="https://media-exp1.licdn.com/dms/image/C5603AQE1rl-7O7DIqA/profile-displayphoto-shrink_800_800/0/1558023875966?e=1655337600&v=beta&t=81lA8R8NIq4fjkHsiKX49BaHsQ5oA_SeAMQnkAGFxvE" width="200"> 
+**Yin Ue "Tianna" Chan** <br>
+<img src="https://media-exp1.licdn.com/dms/image/C5603AQE1rl-7O7DIqA/profile-displayphoto-shrink_800_800/0/1558023875966?e=1655337600&v=beta&t=81lA8R8NIq4fjkHsiKX49BaHsQ5oA_SeAMQnkAGFxvE" width="200"> <br>
 Yin Ue “Tianna” Chan is a senior pursuing a B.S. in Mathematics/ Economics with a minor in Digital Humanities (2022). She is a hard-working individual who is always looking for opportunities to improve her skills. After graduation, she hopes to leverage her analytical, critical thinking and problem-solving skills to the business world and build a better community.
  
-**Irvin Ramirez** 
-<img src="https://imgur.com/a/60PLEcJ" width="200"> 
+**Irvin Ramirez** <br>
+<img src="https://imgur.com/a/60PLEcJ" width="200"> <br>
 Irvin Ramirez is a senior pursuing a B.A. in Sociology. He is a student who is interested in GIS and Urban Planning and hopes to improve his skills with web mapping through this course. After graduation he plans to work for a tech start up in Mexico City, Mexico. 
  
- **Leonela Aguilar** 
-#<img src="" width=""> 
+ **Leonela Aguilar** <br>
+(Image) <br>
 INTRODUCTION
  
 ## Overview
