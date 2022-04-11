@@ -10,7 +10,7 @@ We would like to focus on the social media uses, in particular, on messaging app
 Yin Ue “Tianna” Chan is a senior pursuing a B.S. in Mathematics/ Economics with a minor in Digital Humanities (2022). She is a hard-working individual who is always looking for opportunities to improve her skills. After graduation, she hopes to leverage her analytical, critical thinking and problem-solving skills to the business world and build a better community.
  
 **Irvin Ramirez** <br>
-<img src="https://imgur.com/a/60PLEcJ" width="200"> <br>
+<img src="https://i.ibb.co/JdjDmK9/image.jpg" width="200"> <br>
 Irvin Ramirez is a senior pursuing a B.A. in Sociology. He is a student who is interested in GIS and Urban Planning and hopes to improve his skills with web mapping through this course. After graduation he plans to work for a tech start up in Mexico City, Mexico. 
  
  **Leonela Aguilar** <br>
