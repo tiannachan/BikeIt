@@ -24,4 +24,4 @@ The data will be downloaded as a CSV file. We can download the census data by st
 
 <br>
 
-<a href="Week4/uxdesign">Part 2: UX Design</a>
+<a href="uxdesign">Part 2: UX Design</a>
