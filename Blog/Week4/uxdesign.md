@@ -1,6 +1,7 @@
 # Week 4 Part 2: UX Design
 
 ## Mind Maps
+
 | Tianna Chan | Leonela Aguilar | Irvin Ramirez | Michelle Kung |
 |:---:|:---:|:---:|:---:|
 | ![](images/TiannaMindmap.jpg)|![](images/LeonelaMindmap.jpg)|x ![](images/IrvinMindmap.jpg) | x ![](images/MichelleMindmap.jpg) |
