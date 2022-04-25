@@ -1,7 +1,7 @@
 # DH151-SocialMedia - Project Proposal
 
 ## Introduction
-Our Team name is Bluebirds.
+Our Team name is FoodTok.
  
 Our goal is to research trending Google Search hashtags on popular TikTok recipes in 12 selected states all over the United States. By comparing the weather, demographics, and related information of each state, we will identify correlations, trends, and discuss why certain recipes are so successful in some states but not in the other. 
  
