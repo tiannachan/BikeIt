@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bike Map</title>
+	<meta charset="utf-8" />
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/map.css">
+
+	<!-- leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <!-- Leaflet-Ajax for GeoJSON -->
+    <script src="js/leaflet.ajax.min.js"></script>
+
+	<!-- papaparse for csv data -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+</head>
+<body>
+
+	<div class="header">
+		Bike Map
+	</div>
+	<div class="sidebar">
+        
+	</div>
+	<div class="content">
+		<div id="map"></div>
+	</div>
+	<div class="footer">
+		Data source: <a href="https://bikeshare.metro.net/about/data/">Metro Bike Share</a>;
+        <a href="https://geohub.lacity.org/datasets/230abc621b144dbc96cca83d65bd454d/explore?location=34.033311%2C-118.317725%2C10.87">Bike Lanes</a>
+	</div>
+
+	<script src="js/map.js"></script>
+
+</body>
+</html>
