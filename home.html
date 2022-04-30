@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Metro Bike Share Analysis</title>
+    <meta charset="utf-8" />
+    
+    <!-- style sheets -->
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ropa+Sans">
+    
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        
+    <!-- Leaflet-Ajax for GeoJSON -->
+    <script src="js/leaflet.ajax.min.js"></script>
+    
+    <!-- papaparse for csv data -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    
+    </head>
+
+
+<body>
+<div class="container">
+  
+  <div class="logo">
+    <img src="https://11ka1d3b35pv1aah0c3m9ced-wpengine.netdna-ssl.com/wp-content/themes/lametro/library/images/logo.png?v=2" width="180px">
+    Group Name Here
+  </div>
+  
+    <div class="search">
+        <div class="sb-example-1">
+            <div class="search">
+               <input type="text" class="searchTerm" placeholder="Search">
+               <button type="submit" class="searchButton">
+                 <i class="fa fa-search"></i>
+              </button>
+            </div>
+         </div>
+    </div>
+
+    <div class="banner">
+        
+      
+    </div>
+            
+    <div class="menu">
+        <ul>
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a href="#narrative">Narrative</a></li>
+            <li><a href="#data">Data</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="#analysis">Analysis</a></li>
+            <li><a href="Blog/blog.html">Blog</a></li>
+            <li><a href="#references">References</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+    <div class="about">
+        <h2 text-align: center>Our Goal</h2>
+            <p>To examine the trends of bike-share usage and look for solutions to enhance the bike-share contribution to all aspects of our lives.</p>
+      <br>
+    <table style="width:100%">
+                <tr>
+                  <th>Metro Bike-Share</th>
+                  <td>To understand bike-share program performance, uncover trends that help answer how it can be done better.</td>
+                </tr>
+                <tr>
+                  <th>Current Users</th>
+                  <td>To better plan your bike trip with stations popularity and bike lanes info.</td>
+                </tr>
+                <tr>
+                  <th>Everyone Else</th>
+                  <td>To understand the bike-sharing situation in Los Angeles, to know the benefits of bike-sharing, and cosider changing your commute!</td>
+                </tr>
+    </table>
+   
+    </div>
+
+    <div class="station-map">
+        <h2>Station and Bike Lane Map</h2>
+        <div id="map"></div>
+    </div>
+  </div>
+
+  <script src="js/map.js"></script>
+  <script src="js/about.js"></script>
+
+</body>
+</html>
