@@ -160,3 +160,9 @@ let layers = {
 
 // add layer control box
 L.control.layers(null,layers).addTo(map)
+
+
+//function for sidebar
+function flyToIndex(lat, lon){
+	map.flyTo([lat,lon],14)
+};
