@@ -1,7 +1,7 @@
  /* Source: https://www.w3schools.com/howto/howto_css_blog_layout.asp/ */
 
-body {
-    font-family: Arial;
+body { 
+    font-family: 'Ropa Sans';
     padding: 20px;
     background: #f1f1f1;
   }
@@ -60,3 +60,38 @@ body {
     }
   }
 
+  /* *********************************************************
+  Menu Section
+********************************************************* */
+.menu { grid-area: menu;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    border-radius: 30px;
+    background-color: #f3f3f3;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 20px 65px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: #04AA6D;
+  }

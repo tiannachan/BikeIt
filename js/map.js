@@ -116,11 +116,11 @@ let stationLayer = new L.GeoJSON.AJAX("https://bikeshare.metro.net/stations/json
 //Define function for marker color and marker popup
 function getMarkerColor (feature){
     return (feature.properties.electricBikesAvailable > 0 || feature.properties.smartBikesAvailable > 0) ?
-        'icon/greenBike.png': 
+        'images/icon/greenBike.png': 
         //green marker for electric/smart available
-            (feature.properties.classicBikesAvailable > 0) ? 'icon/blueBike.png':
+            (feature.properties.classicBikesAvailable > 0) ? 'images/icon/blueBike.png':
         //blue marker for classic available
-        'icon/greyBike.png';
+        'images/icon/greyBike.png';
         //grey marker for none available
 }
 

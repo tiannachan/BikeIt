@@ -1,0 +1,57 @@
+html, body , .container {
+    height: 100%;
+    margin: 5px;
+    font-family: 'Ropa Sans';
+  }
+
+.container {  display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows: 0.2fr 2fr 0.5fr 2.1fr;
+    gap: 8px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo search"
+      "banner banner"
+      "menu menu"
+      "about station-map";
+  }
+  
+h2 {
+    text-align: center;
+}
+
+/* *********************************************************
+  Menu Section
+********************************************************* */
+.menu { grid-area: menu;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    border-radius: 30px;
+    background-color: #f3f3f3;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 20px 65px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: #04AA6D;
+  }

@@ -1,88 +1,21 @@
 html, body , .container {
-    height: 100%;
-    margin: 5px;
-    font-family: 'Ropa Sans';
-  }
-
-.container {  display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    grid-template-rows: 0.2fr 2fr 0.5fr 2.1fr;
-    gap: 8px 5px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "logo search"
-      "banner banner"
-      "menu menu"
-      "about station-map";
-  }
-  
-h2 {
-    text-align: center;
+  height: 100%;
+  margin: 5px;
+  font-family: 'Ropa Sans';
 }
-
-/* *********************************************************
-  Search bar, Logo, banner Section
-********************************************************* */
-    .logo {
-        border-radius: 50%;
-        background: linear-gradient(to bottom left, dark-blue 15%, light-blue);
-        position: relative;
-    }
-    
-    .banner { 
-    grid-auto-flow: row;
-    grid-area: banner;
-    border-radius: 3px;
-    background-color: #9DBFAF;
-    }
-  
-    .search { grid-area: search; 
-    border-radius: 3px;}
-   
-    .sb-example-1 .search {
-        width: 100%;
-        position: relative;
-        display: flex;
-      }
-      .sb-example-1 .searchTerm {
-        width: 100%;
-        border: 3px solid #00B4CC;
-        border-right: none;
-        padding: 5px;
-        border-radius: 5px 0 0 5px;
-        outline: none;
-        color: #9DBFAF;
-      }
-      .sb-example-1 .searchTerm:focus{
-        color: #00B4CC;
-      }
-      .sb-example-1 .searchButton {
-        width: 40px;
-        height: 50px;
-        border: 1px solid #00B4CC;
-        background: #00B4CC;
-        text-align: center;
-        color: #fff;
-        border-radius: 0 5px 5px 0;
-        cursor: pointer;
-        font-size: 20px;
-      }
-      .sb-example-1 .searchButton i{
-        color: #0052cc;
-      }
 
 /* *********************************************************
   Menu Section
 ********************************************************* */
-  .menu { grid-area: menu; 
-    border-radius: 3px;}
+  .menu { grid-area: menu;}
 
     ul {
         list-style-type: none;
         margin: 0;
-        padding: 0;
+        padding: 0px;
         overflow: hidden;
-        border: 0.5px solid #e7e7e7;
+        border: 1px solid #e7e7e7;
+        border-radius: 30px;
         background-color: #f3f3f3;
       }
       
@@ -94,7 +27,7 @@ h2 {
         display: block;
         color: #666;
         text-align: center;
-        padding: 25px 50px;
+        padding: 20px 65px;
         text-decoration: none;
       }
       
@@ -125,13 +58,61 @@ h2 {
     }
 
 /* *********************************************************
-  Map Section
+  Meet our Team Section
 ********************************************************* */
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 ;
+}
 
-.station-map { grid-area: station-map; 
-    border-radius: 3px;}
-  
-#map {
-	height: 100%;
-    border-radius: 40px;
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-align: center;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #59aa84;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.button:hover {
+  background-color: #9DBFAF;
 }

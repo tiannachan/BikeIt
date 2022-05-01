@@ -1,36 +1,70 @@
 body,html {
-	margin:0;
+	margin: 5px;
+	border: 2px;
 	height:100%;
-	width:100%;
+	font-family: 'Ropa Sans';
 }
 
 #map {
 	height: 100%;
+	border-radius: 30px;
 }
 
 body {
 	display: grid;
-	grid-template-rows: 60px 1fr 40px;
+	grid-template-rows: 70px 1fr 30px;
 	grid-template-columns: 20% 60% 20%;
 	grid-template-areas: 
-	"header header header"
+	"menu menu menu"
 	"sidebar content content"
 	"sidebar footer footer";
 }
 
-.header {
-	grid-area: header;
-	padding:10px;
-	background-color: #333;
-	color: white;
-	font-size: 2em;
-}
+/* *********************************************************
+  Menu Section
+********************************************************* */
+.menu { grid-area: menu;}
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    border-radius: 30px;
+    background-color: #f3f3f3;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 20px 65px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: #04AA6D;
+  }
+
+/* *********************************************************
+  Sidebar Section
+********************************************************* */
 .sidebar {
 	color: white;
 	grid-area: sidebar;
-	padding:10px;
-	background-color: rgb(60, 60, 60);
+	padding:20px;
+	border-radius: 30px;
+	background-color: rgb(92, 86, 86);
     overflow: auto;
 }
 
@@ -41,5 +75,6 @@ body {
 .footer {
 	grid-area: footer;
 	padding:10px;
+	border-radius: 30px;
 	background-color: rgb(175, 175, 175);
 }
