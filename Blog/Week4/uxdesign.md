@@ -11,7 +11,7 @@
  
 | Tianna Chan | Leonela Aguilar | Irvin Ramirez | Michelle Kung |
 |:---:|:---:|:---:|:---:|
-| ![](images/TiannaCrazyEights.png) | ![](images/LeonelaCrazyEights.jpg) | ![](images/IrvinCrazyEights.png) | x ![](images/MichelleCrazyEights.jpg) |
+| ![](images/TiannaCrazyEights.png) | ![](images/LeonelaCrazyEights.jpg) | ![](images/IrvinCrazyEightss.png) | x ![](images/MichelleCrazyEights.jpg) |
 | Some thoughts about how to present our trend maps with different layers, markers, and popups. Also thinking of having buttons on the left that zoom in to specific regions of LA, and on the right having some space for more info of the region when the user clicked on the button.| The website will contain unique images and modules that will help us organize our research creatively. The challenging part of this task is how to create a site without too many clusters of words. | These are some ideas I had to add some unique flare to our website everything is mainly stylistic, though some may pose a challenge depending on how much knowledge of code we have and to utilize it to our advantage. | x |
  
 ## Storyboard
