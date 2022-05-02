@@ -37,7 +37,11 @@ To others, it is important to understand the bike-sharing situation in Los Angel
 <i> Potential Research Questions: </i>
 1. How does the popularity of start and end locations correlates with land use?  <br>
 2. How efficient was the program contribute to the benefit of the community? <br>
-3. What are the ways Metro can do to increase trip duration, pass sales, and improve the program in general?  
+3. What are the ways Metro can do to increase trip duration, pass sales, and improve the program in general?  <br>
+4. How popular is the Metro bike sharing program and which areas ? <br>
+5. How can Metro improve the ride sharing services in neighborhoods with the least bike friendly roads ? <br>
+6. Compare and contrast services in low income vs high income areas
+
  
  
 ## Methodology
