@@ -19,7 +19,7 @@ Yin Ue “Tianna” Chan (she/her/hers) is a senior pursuing a B.S. in Mathemati
 Irvin Ramirez is a senior pursuing a B.A. in Sociology. He is a student who is interested in GIS and Urban Planning and hopes to improve his skills with web mapping through this course. After graduation, he plans on working on enhancing his skills in web development before applying to graduate school.
  
 **Leonela Aguilar** <br>
-<img src="images/team/Leomela.jpeg" width="200"> <br>
+<img src="images/team/Leonela.jpeg" width="200"> <br>
 Leonela Aguilar(she/her/hers) is a fourth-year transfer student majoring in Sociology and minoring in Digital Humanities. She is currently interested in developing web-building skills and expanding her tech skills. Post-grad, she plans on immersing herself in the tech industry where she also hopes to represent more Latina women in the field. 
  
 **Michelle Kung** <br>
