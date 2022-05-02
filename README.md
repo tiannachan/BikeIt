@@ -11,20 +11,21 @@ Our goal is to examine the trends of bike-share usage and look for solutions to 
 ## Team Members
  
 **Yin Ue "Tianna" Chan** <br>
-<img src="https://media-exp1.licdn.com/dms/image/C5603AQE1rl-7O7DIqA/profile-displayphoto-shrink_800_800/0/1558023875966?e=1655337600&v=beta&t=81lA8R8NIq4fjkHsiKX49BaHsQ5oA_SeAMQnkAGFxvE" width="200"> <br>
+<img src="images/team/Tianna.jpeg" width="200"> <br>
 Yin Ue “Tianna” Chan (she/her/hers) is a senior pursuing a B.S. in Mathematics/Economics with a minor in Digital Humanities. She is a hard-working individual who is always looking for opportunities to improve her skills. After graduation, she hopes to leverage her analytical, critical thinking, and problem-solving skills in the business world and build a better community.
  
 **Irvin Ramirez** <br>
-<img src="https://i.ibb.co/JdjDmK9/image.jpg" width="200"> <br>
+<img src="images/team/Irvin.jpeg" width="200"> <br>
 Irvin Ramirez is a senior pursuing a B.A. in Sociology. He is a student who is interested in GIS and Urban Planning and hopes to improve his skills with web mapping through this course. After graduation, he plans on working on enhancing his skills in web development before applying to graduate school.
  
 **Leonela Aguilar** <br>
-<img src="https://wspucla.files.wordpress.com/2021/06/thumbnail_leonela-aguilar_photo.jpg" width="200"> <br>
+<img src="images/team/Leomela.jpeg" width="200"> <br>
 Leonela Aguilar(she/her/hers) is a fourth-year transfer student majoring in Sociology and minoring in Digital Humanities. She is currently interested in developing web-building skills and expanding her tech skills. Post-grad, she plans on immersing herself in the tech industry where she also hopes to represent more Latina women in the field. 
  
 **Michelle Kung** <br>
-<!--<img src="  " width="200"> <br>-->
- 
+<img src="images/team/Michelle.jpeg" width="200"> <br>
+Michelle Kung is a fourth year sociology major from Hong Kong. She is interested in exploring how people interact and socialise under the digital environment. After graduation she hopes to leverage her digital skills and sociological understanding to help NGOs build digital campaigns.
+                    
 ## Overview
 The research inquiry focuses on the trends of bike-share usage in Los Angeles from 2021 April to 2022 March. 
 
