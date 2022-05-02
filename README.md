@@ -1,4 +1,4 @@
-# DH151-SocialMedia - Project Proposal
+# Project Proposal
  
 ## Introduction
  
