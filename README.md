@@ -2,7 +2,7 @@
  
 ## Introduction
  
-Our Team name is _____.
+Our Team name is <i>Bike It!</i>.
  
 As technology is getting more sophisticated and easily accessible, environmental concerns are also being brought up more frequently. Bike-share technology is made available to individuals who want to rent bicycles on a short-term basis by just using their transportation card or application on their phone. Metro Bike Share, a partnership between Metro and the City of Los Angeles, aims to provide a fast, easy, and fun way to ride bikes.
  
