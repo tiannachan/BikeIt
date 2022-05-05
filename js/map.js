@@ -1,88 +1,15 @@
 // Global variables
-// let map;
 let lat = 34.0692;
 let lon = -118.3206;
 let zl = 11.4;
-// let path = 'data/startStationCount.csv';
-// let markers = L.featureGroup();
 
-// initialize
-// $( document ).ready(function() {
-// 	createMap(lat,lon,zl);
-// 	readCSV(path);
-// });
+let map = L.map('map').setView([lat,lon], zl);
 
-// create the map
-// function createMap(lat,lon,zl){
-	let map = L.map('map').setView([lat,lon], zl);
-
-	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-	}).addTo(map);
-// }
-
-// // function to read csv data
-// function readCSV(path){
-// 	Papa.parse(path, {
-// 		header: true,
-// 		download: true,
-// 		complete: function(data) {
-// 			console.log(data);
-			
-// 			// map the data
-// 			mapCSV(data);
-// 		}
-// 	});
-// }
-
-// function mapCSV(data){
-
-// 	// clear layers
-// 	markers.clearLayers();
-
-// 	// loop through each entry
-// 	data.data.forEach(function(item,index){
-// 		// circle options
-// 		let circleOptions = {
-// 			radius: getRadiusSize(item.count),
-// 			weight: 1,
-// 			color: 'white',
-// 			fillColor: 'red',
-// 			fillOpacity: 0.5
-// 			}
-// 			let marker = L.circleMarker([item.Start_Lat,item.Start_Lon],circleOptions)
-            
-// 			markers.addLayer(marker)	
-// 		});
-
-// 	markers.addTo(map)
-//     map.fitBounds(markers.getBounds())
-
-// }
-
-// function getRadiusSize(value){
-
-//     // create empty array to store data
-// 	let values = [];
-
-// 	// add counts to the array
-// 	data.data.forEach(function(item){
-// 		values.push(Number(item.count))
-// 	})
+	L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
+        maxZoom: 20,
+        attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+    }).addTo(map);
     
-//     // get the max 
-// 	let max = Math.max(...values)
-	
-// 	// per pixel if 100 pixel is the max range
-// 	perpixel = max/100;
-
-//     // return the pixel size for given value
-// 	return value/perpixel
-// }
-
-
-
-
 // Read bike lane GeoJSON and add to map
 let laneLayer = new L.GeoJSON.AJAX("data/Bikeways_(Existing).geojson",{
     onEachFeature: lanePopup
@@ -166,3 +93,10 @@ L.control.layers(null,layers).addTo(map)
 function flyToIndex(lat, lon){
 	map.flyTo([lat,lon],14)
 };
+
+
+L.control.locate({
+    strings: {
+        title: "Locate me"
+    }
+}).addTo(map);
