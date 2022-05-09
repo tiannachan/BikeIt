@@ -5,10 +5,11 @@ let zl = 11.4;
 
 let map = L.map('map').setView([lat,lon], zl);
 
-	L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
-        maxZoom: 20,
-        attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-    }).addTo(map);
+	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox.mapbox-traffic-v1',
+        accessToken: 'pk.eyJ1IjoidGlhbm5hY2hhbiIsImEiOiJjbDJ0aGhveTMwNGZ3M2NvZ2FnMWxuYm9oIn0.lGhoBkOhXOgXpA-dbuu70A'}).addTo(map);
     
 // Read bike lane GeoJSON and add to map
 let laneLayer = new L.GeoJSON.AJAX("data/Bikeways_(Existing).geojson",{
