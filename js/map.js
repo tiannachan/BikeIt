@@ -16,6 +16,7 @@ $( document ).ready(function() {
     mapBikeLane();
     mapStation();
     readStart(startpath);
+    layerBox();
 });
 
 // create the map
@@ -128,7 +129,7 @@ function mapStart(count){
 	startdata.data.forEach(function(item,index){
 		// circle options
 		let circleOptions = {
-			radius: getRadiusSize(item[count]), // call a function to determine radius size
+			radius: getRadiusSize(parseFloat(item['count'].replace(/,/g,''))), // call a function to determine radius size
 			weight: 1,
 			color: 'white',
 			fillColor: 'red',
@@ -136,12 +137,13 @@ function mapStart(count){
 		}
 		let marker = L.circleMarker([item.Start_Lat,item.Start_Lon],circleOptions)
         
+        // add startPop to featuregroup
         markers.addLayer(marker)	
 	
 	});
 
+    // add featuregroup to map
 	markers.addTo(map)
-	map.fitBounds(markers.getBounds())
 
 }
 
@@ -152,7 +154,7 @@ function getRadiusSize(value){
 
 	// add case counts for most recent date to the array
 	startdata.data.forEach(function(item,index){
-		values.push(Number(item[count]))
+		values.push(Number(parseFloat(item['count'].replace(/,/g,''))))
 	})
     
     // get the max case count for most recent date
@@ -166,10 +168,6 @@ function getRadiusSize(value){
 }
 
 
-
-
-
-
 function locateMe(){
     L.control.locate({
         strings: {
@@ -178,14 +176,15 @@ function locateMe(){
     }).addTo(map);
 }
 
-// // add layer control box
-// function layerBox(){
-    // let layers = {
-// 	"Existing Bike Lanes": laneLayer,
-//     "Bike Share Stations": stationLayer
-// }
-//     L.control.layers(null,layers).addTo(map)
-// }
+// add layer control box
+function layerBox(){
+    let layers = {
+	"Existing Bike Lanes": laneLayer,
+    "Bike Share Stations": stationLayer,
+    "Popular Start Stations": markers
+    }
+    L.control.layers(null,layers).addTo(map)
+}
 
 
 //function for sidebar "Explore"
