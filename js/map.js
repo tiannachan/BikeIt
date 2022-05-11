@@ -4,10 +4,16 @@ let lat = 34.0692;
 let lon = -118.3206;
 let zl = 11.4;
 
+let stationLayer;
+let laneLayer;
+
 let startpath = 'data/startStationCount.csv';
 let endpath = 'data/endStationCount.csv';
 
-let markers = L.featureGroup();
+let startMarkers = L.featureGroup();
+let endMarkers = L.featureGroup();
+
+let info_panel = L.control(); //default position: top right
 
 // initialize
 $( document ).ready(function() {
@@ -16,6 +22,8 @@ $( document ).ready(function() {
     mapBikeLane();
     mapStation();
     readStart(startpath);
+    readEnd(endpath);
+    createInfoPanel();
     layerBox();
 });
 
@@ -35,7 +43,7 @@ function createMap(lat,lon,zl){
 function mapBikeLane(){
 
     // Read bike lane GeoJSON and add to map
-    let laneLayer = new L.GeoJSON.AJAX("data/Bikeways_(Existing).geojson",{
+    laneLayer = new L.GeoJSON.AJAX("data/Bikeways_(Existing).geojson",{
         onEachFeature: lanePopup
     });       
     laneLayer.addTo(map);
@@ -58,7 +66,7 @@ function mapBikeLane(){
 function mapStation(){
 
     // Read station GeoJSON and add to map
-    let stationLayer = new L.GeoJSON.AJAX("https://bikeshare.metro.net/stations/json/", {
+    stationLayer = new L.GeoJSON.AJAX("https://bikeshare.metro.net/stations/json/", {
         onEachFeature: onEachFeature
     })
         .addTo(map)
@@ -120,13 +128,13 @@ function readStart(){
 	});
 }
 
-function mapStart(count){
+function mapStart(){
 
 	// clear layers in case you are calling this function more than once
-	markers.clearLayers();
+	startMarkers.clearLayers();
 
 	// loop through each entry
-	startdata.data.forEach(function(item,index){
+	startdata.data.forEach(function(item){
 		// circle options
 		let circleOptions = {
 			radius: getRadiusSize(parseFloat(item['count'].replace(/,/g,''))), // call a function to determine radius size
@@ -136,14 +144,14 @@ function mapStart(count){
 			fillOpacity: 0.5
 		}
 		let marker = L.circleMarker([item.Start_Lat,item.Start_Lon],circleOptions)
-        
+
         // add startPop to featuregroup
-        markers.addLayer(marker)	
+        startMarkers.addLayer(marker)	
 	
 	});
 
     // add featuregroup to map
-	markers.addTo(map)
+	startMarkers.addTo(map)
 
 }
 
@@ -167,6 +175,48 @@ function getRadiusSize(value){
 	return value/perpixel
 }
 
+// function to read end count csv data
+function readEnd(){
+	Papa.parse(endpath, {
+		header: true,
+		download: true,
+		complete: function(data) {
+			console.log(data);
+			// put the data in a global variable
+			enddata = data;
+
+			// call the mapCSV function to map the data
+			mapEnd();
+		}
+	});
+}
+
+function mapEnd(){
+
+	// clear layers in case you are calling this function more than once
+	endMarkers.clearLayers();
+
+	// loop through each entry
+	enddata.data.forEach(function(item){
+		// circle options
+		let circleOptions = {
+			radius: getRadiusSize(parseFloat(item['count'].replace(/,/g,''))), // call a function to determine radius size
+			weight: 1,
+			color: 'white',
+			fillColor: 'blue',
+			fillOpacity: 0.5
+		}
+		let marker = L.circleMarker([item.End_Lat,item.End_Lon],circleOptions)
+        
+        // add endMarkers to featuregroup
+        endMarkers.addLayer(marker)	
+	
+	});
+
+    // add featuregroup to map
+	endMarkers.addTo(map)
+
+}
 
 function locateMe(){
     L.control.locate({
@@ -181,9 +231,35 @@ function layerBox(){
     let layers = {
 	"Existing Bike Lanes": laneLayer,
     "Bike Share Stations": stationLayer,
-    "Popular Start Stations": markers
+    "Popular Start Stations": startMarkers,
+    "Popular End Stations": endMarkers,
     }
-    L.control.layers(null,layers).addTo(map)
+    L.control.layers(null,layers,{collapsed:false}).addTo(map)
+}
+
+
+function createInfoPanel(){
+
+    info_panel.onAdd = function (map) {
+        this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+        this.update();
+        return this._div;
+    };
+    
+    // method that we will use to update the control based on feature properties passed
+    info_panel.update = function (properties) {
+        // if feature is highlighted
+        if(properties){
+            this._div.innerHTML = `<b>${properties.name}</b><br>${count}: ${properties[count]}`;
+        }
+        // if feature is not highlighted
+        else
+        {
+            this._div.innerHTML = 'Hover over a circle (TESTING)';
+        }
+    };
+
+    info_panel.addTo(map);
 }
 
 
@@ -191,3 +267,4 @@ function layerBox(){
 function flyToIndex(lat, lon){
 	map.flyTo([lat,lon],14)
 };
+
