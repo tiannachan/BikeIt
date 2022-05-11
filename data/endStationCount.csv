@@ -1,4 +1,4 @@
-﻿End_Station,Start_Station_Name,count,End_Lat,End_Lon
+﻿Station,Station_Name,count,End_Lat,End_Lon
 3000,Virtual Station,"5,438",34.0258900000,-118.2382200000
 3005,7th & Flower,"7,492",34.0485000000,-118.2585370000
 3006,Olive & 8th,"2,643",34.0455400000,-118.2566680000
