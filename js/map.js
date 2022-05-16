@@ -31,7 +31,7 @@ $( document ).ready(function() {
 function createMap(lat,lon,zl){
     map = L.map('map').setView([lat,lon], zl);
    
-       L.tileLayer('https://api.mapbox.com/styles/v1/iramirez/cl32gfzq4005114pbxqw6wqx5/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiaXJhbWlyZXoiLCJhIjoiY2t3NXp3OGc0MGhkcDJwbzBnOWF5M2I5NiJ9.RDoR2Fw5DP2GJsG_uUY7kg', {
+       L.tileLayer('https://api.mapbox.com/styles/v1/iramirez/cl39d3ufu000515pmzes7noks/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiaXJhbWlyZXoiLCJhIjoiY2t3NXp3OGc0MGhkcDJwbzBnOWF5M2I5NiJ9.RDoR2Fw5DP2GJsG_uUY7kg', {
            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
            maxZoom: 18,
         })
