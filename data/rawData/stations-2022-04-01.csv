@@ -1,4 +1,4 @@
-Station_ID,Station_Name,Day of Go_live_date,Region ,Status
+Station_ID,Station_Name,Go_live_date,Region ,Status
 3000,Virtual Station,7/7/2016,N/A,Active
 3005,7th & Flower,7/7/2016,DTLA,Active
 3006,Olive & 8th,7/7/2016,DTLA,Active
@@ -357,7 +357,7 @@ Station_ID,Station_Name,Day of Go_live_date,Region ,Status
 4583,McConnell & Runway,11/16/2020,Westside,Active
 4584,Fountain & Vine,10/6/2021,DTLA,Active
 4587,Wiltern,4/22/2021,DTLA,Active
-4592,CicLAvia–Heart of LA presented by Metro,10/10/2021,DTLA,Inactive
+4592,CicLAviaï¿½Heart of LA presented by Metro,10/10/2021,DTLA,Inactive
 4593,CicLAvia South LA - Crenshaw Hub,12/5/2021,DTLA,Inactive
 4594,CicLAvia South LA - Expo Park Hub,12/5/2021,DTLA,Inactive
 4595,Chandler & Colfax,3/4/2022,North Hollywood,Active
