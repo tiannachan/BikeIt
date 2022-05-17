@@ -9,6 +9,7 @@ let laneLayer;
 
 let startpath = 'data/startStationCount.csv';
 let endpath = 'data/endStationCount.csv';
+let stationpath = "data/rawData/stations-2022-04-01.csv"
 
 let startMarkers = L.featureGroup();
 let endMarkers = L.featureGroup();
@@ -108,10 +109,10 @@ function mapStation(){
             </tr>
         </table>
         <br>
-        Docks Available: ${feature.properties.docksAvailable}<br>`)
+        <p>Docks Available: ${feature.properties.docksAvailable}</p>
+        <br>`)
     }
 }
-
 
 // function to read start count csv data
 function readStart(){
@@ -138,7 +139,7 @@ function mapStart(){
 	startdata.data.forEach(function(item){
 		// circle options
 		let circleOptions = {
-			radius: getRadiusSize(parseFloat(item['count'].replace(/,/g,''))), // call a function to determine radius size
+			radius: getRadiusSize(parseFloat(item['total_count'].replace(/,/g,''))), // call a function to determine radius size
 			weight: 1,
 			color: 'white',
 			fillColor: 'red',
@@ -163,7 +164,7 @@ function getRadiusSize(value){
 
 	// add case counts for most recent date to the array
 	startdata.data.forEach(function(item,index){
-		values.push(Number(parseFloat(item['count'].replace(/,/g,''))))
+		values.push(Number(parseFloat(item['total_count'].replace(/,/g,''))))
 	})
     
     // get the max case count for most recent date
@@ -201,7 +202,7 @@ function mapEnd(){
 	enddata.data.forEach(function(item){
 		// circle options
 		let circleOptions = {
-			radius: getRadiusSize(parseFloat(item['count'].replace(/,/g,''))), // call a function to determine radius size
+			radius: getRadiusSize(parseFloat(item['total_count'].replace(/,/g,''))), // call a function to determine radius size
 			weight: 1,
 			color: 'white',
 			fillColor: 'blue',
@@ -251,7 +252,7 @@ function createInfoPanel(){
     info_panel.update = function (properties) {
         // if feature is highlighted
         if(properties){
-            this._div.innerHTML = `<b>${properties.name}</b><br>${count}: ${properties[count]}`;
+            this._div.innerHTML = `<b>${properties.name}</b><br>${total_count}: ${properties[total_count]}`;
         }
         // if feature is not highlighted
         else
