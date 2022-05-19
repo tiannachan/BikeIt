@@ -5,14 +5,14 @@ html, body , .container {
   }
 
 .container {  display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    grid-template-rows: 0.2fr 2fr 0.5fr 2.1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.5fr 2fr 2.1fr;
     gap: 8px 5px;
     grid-auto-flow: row;
     grid-template-areas:
       "logo search"
-      "banner banner"
       "menu menu"
+      "banner banner"
       "about station-map";
   }
   
@@ -21,7 +21,7 @@ h2 {
 }
 
 /* *********************************************************
-  Search bar, Logo, banner Section
+  Search bar, Logo and Banner Section
 ********************************************************* */
     .logo {
         border-radius: 50%;
@@ -70,6 +70,8 @@ h2 {
       .sb-example-1 .searchButton i{
         color: #0052cc;
       }
+
+
 
 /* *********************************************************
   Menu Section
@@ -135,3 +137,6 @@ h2 {
 	height: 100%;
     border-radius: 40px;
 }
+
+* {box-sizing:border-box}
+
