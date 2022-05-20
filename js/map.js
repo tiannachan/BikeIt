@@ -1,8 +1,8 @@
 // Global variables
 let map;
-let lat = 34.0692;
-let lon = -118.3206;
-let zl = 11.4;
+let lat = 34.03;
+let lon = -118.35;
+let zl = 11.5;
 
 let stationLayer;
 let laneLayer;
@@ -14,7 +14,6 @@ let stationpath = "data/rawData/stations-2022-04-01.csv"
 let startMarkers = L.featureGroup();
 let endMarkers = L.featureGroup();
 
-let info_panel = L.control(); //default position: top right
 
 // initialize
 $( document ).ready(function() {
@@ -24,7 +23,6 @@ $( document ).ready(function() {
     mapStation();
     readStart(startpath);
     readEnd(endpath);
-    createInfoPanel();
     layerBox();
 });
 
@@ -40,7 +38,6 @@ function createMap(lat,lon,zl){
    }
 
    
- 
 // function to map bike lane
 function mapBikeLane(){
 
@@ -139,7 +136,7 @@ function mapStart(){
 	startdata.data.forEach(function(item){
 		// circle options
 		let circleOptions = {
-			radius: getRadiusSize(parseFloat(item['total_count'].replace(/,/g,''))), // call a function to determine radius size
+			radius: getStartRadiusSize(parseFloat(item['total_count'].replace(/,/g,''))), // call a function to determine radius size
 			weight: 1,
 			color: 'white',
 			fillColor: 'red',
@@ -157,7 +154,7 @@ function mapStart(){
 
 }
 
-function getRadiusSize(value){
+function getStartRadiusSize(value){
 
 	// create empty array to store data
 	let values = [];
@@ -202,7 +199,7 @@ function mapEnd(){
 	enddata.data.forEach(function(item){
 		// circle options
 		let circleOptions = {
-			radius: getRadiusSize(parseFloat(item['total_count'].replace(/,/g,''))), // call a function to determine radius size
+			radius: getEndRadiusSize(parseFloat(item['total_count'].replace(/,/g,''))), // call a function to determine radius size
 			weight: 1,
 			color: 'white',
 			fillColor: 'blue',
@@ -218,6 +215,26 @@ function mapEnd(){
     // add featuregroup to map
 	endMarkers.addTo(map)
 
+}
+
+function getEndRadiusSize(value){
+
+	// create empty array to store data
+	let values = [];
+
+	// add case counts for most recent date to the array
+	enddata.data.forEach(function(item,index){
+		values.push(Number(parseFloat(item['total_count'].replace(/,/g,''))))
+	})
+    
+    // get the max case count for most recent date
+	let max = Math.max(...values)
+	
+	// per pixel if 100 pixel is the max range
+	perpixel = max/100;
+
+    // return the pixel size for given value
+	return value/perpixel
 }
 
 function locateMe(){
@@ -236,37 +253,70 @@ function layerBox(){
     "Popular Start Stations": startMarkers,
     "Popular End Stations": endMarkers,
     }
-    L.control.layers(null,layers,{collapsed:false}).addTo(map)
+    L.control.layers(null,layers).addTo(map)
 }
-
-
-function createInfoPanel(){
-
-    info_panel.onAdd = function (map) {
-        this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-        this.update();
-        return this._div;
-    };
-    
-    // method that we will use to update the control based on feature properties passed
-    info_panel.update = function (properties) {
-        // if feature is highlighted
-        if(properties){
-            this._div.innerHTML = `<b>${properties.name}</b><br>${total_count}: ${properties[total_count]}`;
-        }
-        // if feature is not highlighted
-        else
-        {
-            this._div.innerHTML = 'Hover over a circle (TESTING)';
-        }
-    };
-
-    info_panel.addTo(map);
-}
-
 
 //function for sidebar "Explore"
 function flyToIndex(lat, lon){
 	map.flyTo([lat,lon],14)
 };
 
+
+
+//function for sidebar popularity stations
+
+function newmapStart(variable){
+
+    // clear original layers
+    startMarkers.clearLayers();
+	endMarkers.clearLayers();
+
+	// loop through each entry
+	startdata.data.forEach(function(item){
+		// circle options
+		let circleOptions = {
+			radius: (parseFloat(item[variable].replace(/,/g,'')))/50, 
+			weight: 1,
+			color: 'white',
+			fillColor: 'red',
+			fillOpacity: 0.5
+		}
+		let marker = L.circleMarker([item.Start_Lat,item.Start_Lon],circleOptions)
+
+        // add startPop to featuregroup
+        startMarkers.addLayer(marker)	
+	
+	});
+
+    // add featuregroup to map
+	startMarkers.addTo(map)
+
+}
+
+function newmapEnd(variable){
+
+	 // clear original layers
+    startMarkers.clearLayers();
+	endMarkers.clearLayers();
+
+	// loop through each entry
+	enddata.data.forEach(function(item){
+		// circle options
+		let circleOptions = {
+			radius: (parseFloat(item[variable].replace(/,/g,'')))/50, 
+			weight: 1,
+			color: 'white',
+			fillColor: 'blue',
+			fillOpacity: 0.5
+		}
+		let marker = L.circleMarker([item.End_Lat,item.End_Lon],circleOptions)
+
+        // add endPop to featuregroup
+        endMarkers.addLayer(marker)	
+	
+	});
+
+    // add featuregroup to map
+	endMarkers.addTo(map)
+
+}

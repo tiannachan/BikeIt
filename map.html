@@ -49,11 +49,35 @@
 					<img src="images/icon/greyBike.png" width="25">: No Available Bikes 
 				</p>
 			<p>Hover on the green roads to see the bike lane streets.</p>
-			<p>Use the toggle box on the upper right to select desirable layers.</p>
+			<!-- <p>Use the toggle box on the upper right to select desirable layers.</p> -->
+			<p>Click to show or hide the station and bike lanes:</p>
+			<p align="center"><button class="button-3" role="button" onclick= (mapBikeLane(),mapStation()) >Show</button>/<button class="button-3" role="button" onclick= (laneLayer.clearLayers(),stationLayer.clearLayers())>Hide</button></p>
+
+		<div class="sidebar-box">
+			<h3>Popular Start Stations</h3>
+			<div class="sidebar-item" onclick="newmapStart('2021_q2_count')">2021 Quarter 2</div>
+			<div class="sidebar-item" onclick="newmapStart('2021_q3_count')">2021 Quarter 3</div>
+			<div class="sidebar-item" onclick="newmapStart('2021_q4_count')">2021 Quarter 4</div>
+			<div class="sidebar-item" onclick="newmapStart('2022_q1_count')">2022 Quarter 1</div>
+			<div class="sidebar-item" onclick="mapStart()">Total</div>
+		</div>
+
+		<br>
+
+		<div class="sidebar-box">
+			<h3>Popular End Stations</h3>
+			<div class="sidebar-item" onclick="newmapEnd('2021_q2_count')">2021 Quarter 2</div>
+			<div class="sidebar-item" onclick="newmapEnd('2021_q3_count')">2021 Quarter 3</div>
+			<div class="sidebar-item" onclick="newmapEnd('2021_q4_count')">2021 Quarter 4</div>
+			<div class="sidebar-item" onclick="newmapEnd('2022_q1_count')">2022 Quarter 1</div>
+			<div class="sidebar-item" onclick="mapEnd()">Total</div>
+		</div>
+
+		<br>
 
 		<div class="sidebar-box">
 			<h3>Explore</h3>
-			<div class="sidebar-item" onclick="flyToIndex(34.066242,-118.445328);alert('There was no one using the bike stations at UCLA -- Metro Bike Share expansion to the UCLA campus and Westwood Village is launched in Spring 2022.')">UCLA*</div>
+			<div class="sidebar-item" onclick="flyToIndex(34.066242,-118.445328)">UCLA*</div>
 			<div class="sidebar-item" onclick="flyToIndex(34.02278,-118.40472)">Palms/Culver City</div>
 			<div class="sidebar-item" onclick="flyToIndex(33.980289,-118.451745)">Venice/ Del Rey/ Playa Vista</div>
 			<div class="sidebar-item" onclick="flyToIndex(34.050833,-118.255)">Downtown LA</div>
