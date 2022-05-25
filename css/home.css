@@ -54,7 +54,7 @@ h2 {
   right: -100%;
   height: 100%;
   width: 100%;
-  background: #000;
+  background: rgb(0,128,26);
   /*background: linear-gradient(90deg, #f92c78, #4114a1);*/
   /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
  /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
@@ -91,7 +91,7 @@ h2 {
 	top: calc(50% - 1px);
 	left: 30%;
 	width: 40%;
-	border-bottom: 2px solid #000;
+	border-bottom: 2px solid rgb(0,128,26);
 	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .menu-btn:before{
@@ -168,7 +168,7 @@ h2 {
   transform: scaleY(1);
 }
 .wrapper ul li a:hover{
-  color: #1a73e8;
+  color: #2ea44f;
 }
 input[type="checkbox"]{
   display: none;
@@ -181,7 +181,7 @@ input[type="checkbox"]{
   z-index: -1;
   text-align: center;
   width: 100%;
-  color: #202020;
+  color: rgb(0,128,26);
 }
 .content .title{
   font-size: 40px;
@@ -194,6 +194,7 @@ input[type="checkbox"]{
 
 #active:checked ~ .wrapper ul li a{
   opacity: 1;
+  
 }
 .wrapper ul li a{
   transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
