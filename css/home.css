@@ -40,7 +40,7 @@ h2 {
     display: inline-block;
     padding: 12px;
     color: white;
-    background-image:url(https://github.com/tiannachan/BikeIt/blob/106fd2206ef8da36812017cedee75ae426583713/images/lane.jpeg);
+    background-image:url(https://github.com/tiannachan/BikeIt/blob/106fd2206ef8da36812017cedee75ae426583713/images/lane.jpeg?raw=true);
     background-color: #59aa84;
     text-align: center;
     cursor: pointer;
@@ -49,7 +49,7 @@ h2 {
   }
   
   .button:hover, .button::selection {
-    background-image:url(https://github.com/tiannachan/BikeIt/blob/106fd2206ef8da36812017cedee75ae426583713/images/lanewithbike.jpeg);
+    background-image:url(https://github.com/tiannachan/BikeIt/blob/106fd2206ef8da36812017cedee75ae426583713/images/lanewithbike.jpeg?raw=true);
     transition: all 0.3s ease-in-out;
   }
 
