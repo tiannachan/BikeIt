@@ -40,7 +40,7 @@ h2 {
     display: inline-block;
     padding: 12px;
     color: white;
-    background-image:url(/images/lane.jpeg);
+    background-image:url(images/lane.jpeg);
     background-color: #59aa84;
     text-align: center;
     cursor: pointer;
@@ -49,7 +49,7 @@ h2 {
   }
   
   .button:hover, .button::selection {
-    background-image:url(/images/lanewithbike.jpeg);
+    background-image:url(images/lanewithbike.jpeg);
     transition: all 0.3s ease-in-out;
   }
 
