@@ -5,15 +5,12 @@ html, body , .container {
   }
 
 .container {  display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 0.5fr 2fr 2.1fr;
+    grid-template-rows: 15% 85%;
     gap: 8px 5px;
     grid-auto-flow: row;
     grid-template-areas:
       "logo search"
-      "menu menu"
-      "banner banner"
-      "about station-map";
+      "banner banner";
   }
   
 h2 {
@@ -33,9 +30,28 @@ h2 {
     grid-auto-flow: row;
     grid-area: banner;
     border-radius: 3px;
-    background-color: #9DBFAF;
+    min-width: 100%;
     }
 
+
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 12px;
+    color: white;
+    background-image:url(/images/lane.jpeg);
+    background-color: #59aa84;
+    text-align: center;
+    cursor: pointer;
+    width: 19.78%;
+    border-radius: 20px;
+  }
+  
+  .button:hover, .button::selection {
+    background-image:url(/images/lanewithbike.jpeg);
+    transition: all 0.3s ease-in-out;
+  }
 
 /* *********************************************************
   Menu Section
@@ -206,36 +222,4 @@ input[type="checkbox"]{
    transition-delay: .6s;
   transform: translateX(-100px);
 }
-
-/* *********************************************************
-  About Section
-********************************************************* */
-    .about { grid-area: about;
-    text-align: center;}
-
-    .about-entry {
-    margin-top: 50px;
-    padding: 0 .5em;
-    }
-
-    table {
-        background-color:aliceblue;
-        border-spacing: 40px;
-        border-radius: 20%;
-    }
-
-/* *********************************************************
-  Map Section
-********************************************************* */
-
-.station-map { grid-area: station-map; 
-    border-radius: 3px;}
-  
-#map {
-	height: 100%;
-    border-radius: 40px;
-    z-index: 0;
-}
-
-* {box-sizing:border-box}
 

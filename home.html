@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
     </head>
 
 
@@ -32,25 +36,21 @@
 <div class="container">
   
   <div class="logo">
-    <h3><img src="https://11ka1d3b35pv1aah0c3m9ced-wpengine.netdna-ssl.com/wp-content/themes/lametro/library/images/logo.png?v=2" width="160px">
-    Bike It!</h3>
+    <a href="home.html"><img src="images/icon/BikeItLogo.png" width="195px"></a>
+    <i>An analysis for Metro Bike Share Stations and Usage (2021 Q2 - 2022 Q1)</i>
   </div>
   
     
-
-    <!-- Banner -->
+<!-- Banner -->
 <div class="banner">
-
-    <img src="images/bike-share-hero.jpeg" style="width:100%">
- 
+    <img src="images/bike-share-hero.jpeg" style="width:100%;border-radius:20%;">
+    <a href="data.html"><button class="button">Data</button></a>
+    <a href="map.html"><button class="button">Map</button></a>
+    <a href="analysis.html"><button class="button">Analysis</button></a>
+    <a href="blog.html"><button class="button">Blog</button></a>
+    <a href="about.html"><button class="button">About</button></a>
 </div>
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  </head>
 
-  <body>
     <input type="checkbox" id="active">
     <label for="active" class="menu-btn"><span></span></label>
     <label for="active" class="close"></label>
@@ -64,37 +64,8 @@
         <li><a href="about.html">About</a></li>
       </ul>
 </div>
-  </body>           
- 
-
-    <div class="about">
-        <h2 text-align: center>Our Goal</h2>
-            <p>To examine the trends of bike-share usage and look for solutions to enhance the bike-share contribution to all aspects of our lives.</p>
-      <br>
-    <table style="width:100%">
-                <tr>
-                  <th>Metro Bike-Share</th>
-                  <td>To understand bike-share program performance, uncover trends that help answer how it can be done better.</td>
-                </tr>
-                <tr>
-                  <th>Current Users</th>
-                  <td>To better plan your bike trip with stations popularity and bike lanes info.</td>
-                </tr>
-                <tr>
-                  <th>Everyone Else</th>
-                  <td>To understand the bike-sharing situation in Los Angeles, to know the benefits of bike-sharing, and cosider changing your commute!</td>
-                </tr>
-    </table>
-   
-    </div>
-
-    <div class="station-map">
-        <h2>Station and Bike Lane Map</h2>
-        <div id="map"></div>
-    </div>
-  </div>
-
-  <script src="js/map.js"></script>
+  
+  
   <script src="js/home.js"></script>
 
 </body>
