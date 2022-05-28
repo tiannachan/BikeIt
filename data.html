@@ -24,48 +24,52 @@
         </ul>
     </div>
     
-    <b> The Data <b>
+     <h1>The Data </h1>
         
     
     <b>1. <a href="https://bikeshare.metro.net/about/data/">Metro Bike Share data</a></b>
  
-This website contains the trip data from 2016 quarter 3 to 2022 quarter 1 (as of April 2022). We will be analyzing their 2021 quarter 2 to 2022 quarter 1 data (April 2021- March 2022). The data is downloaded as CSV, which contains variables such as the duration, start and end locations, trip route categories, bike types, and the passholder types. 
+<p> This website contains the trip data from 2016 quarter 3 to 2022 quarter 1 (as of April 2022). We will be analyzing their 2021 quarter 2 to 2022 quarter 1 data (April 2021- March 2022). The data is downloaded as CSV, which contains variables such as the duration, start and end locations, trip route categories, bike types, and the passholder types. 
  
 Since the trip data does not include the names of the start and end stations, we performed an outer join with the station data, available as a CSV file on the same website, including variables such as the first date station is available, and the status (as of April 2022). We also utilized Excel formulas to count the number of trips starting and ending at the same location, in order to map their popularity.
  
 Furthermore, there is real-time station status data available in the GeoJSON file, which allows us to map the station locations and available bikes in real-time, mimicking the metro bike share app’s map.
  
-The data, however, does have some limitations that we had to further clean before mapping. The data include a “virtual station,” which is used by staff to check in or check out a bike remotely for a special event or in a situation in which a bike could not otherwise be checked in or out to a station. Although some of the virtual station’s data have the latitude and longitude data, we have removed these trips from the map to avoid popularity bubbles showing up at random locations. In addition, some short round trips or long trips that could be system or user error was still kept in the dataset for completeness.
+The data, however, does have some limitations that we had to further clean before mapping. The data include a “virtual station,” which is used by staff to check in or check out a bike remotely for a special event or in a situation in which a bike could not otherwise be checked in or out to a station. Although some of the virtual station’s data have the latitude and longitude data, we have removed these trips from the map to avoid popularity bubbles showing up at random locations. In addition, some short round trips or long trips that could be system or user error was still kept in the dataset for completeness.</p>
  
-   <b> Metro Bike Share Data Features <b>
-Trip ID : Trip identification number per bike 
-Duration : Time measurement of bike usage in minutes 
-Start Time: Date and Start Time in regular time of bike usage 
-End Time: Date and End Time in regular time of bike usage 
-Start Station: Station ID number of bike trip’s start location 
-Start Lat: Geographic latitude coordinate of bike trip’s start location 
-Start Lon: Geographic longitude coordinate of bike trip’s start location 
-End Station: Station ID number of bike trip’s end location 
-End Lat: Geographic latitude coordinate of bike trip’s end location 
-End Lon: Geographic longitude coordinate of bike trip’s end location 
-Bike ID: Bike identification tag 
-Plan Duration: Usage of bike determined by passholder type 
-1 - Walk-Up
-30- Monthly 
-365- Annual 
-Trip Route: One Way or Roundtrip 
+ <h1>Metro Bike Share Data Features </h1> 
+<p>Trip ID : Trip identification number per bike</p> 
+<p>Duration : Time measurement of bike usage in minutes</p> 
+<p>Start Time: Date and Start Time in regular time of bike usage</p> 
+<p>End Time: Date and End Time in regular time of bike usage </p> 
+<p>Start Station: Station ID number of bike trip’s start location </p> 
+<p>Start Lat: Geographic latitude coordinate of bike trip’s start location </p> 
+<p>Start Lon: Geographic longitude coordinate of bike trip’s start location </p> 
+<p>End Station: Station ID number of bike trip’s end location </p> 
+<p>End Lat: Geographic latitude coordinate of bike trip’s end location </p> 
+<p>End Lon: Geographic longitude coordinate of bike trip’s end location </p> 
+<p>Bike ID: Bike identification tag </p> 
+<p>Plan Duration: Usage of bike determined by passholder type </p> 
+    <ul>
+  <li>1 - Walk-Up </li>
+  <li>30- Monthly </li>
+  <li>365- Annual </li>
+</ul> 
+<p> Trip Route: One Way or Roundtrip </p> 
 Passholder: 3 types available provided by Metro 
-Walk- Up
-Monthly Pass
-Annual Pass  
-Bike Typer: Standard or Electric
+  <ul>
+  <li>Walk-Up </li>
+  <li>Monthly Pass </li>
+  <li>Annual Pass </li>
+</ul>  
+<p> Bike Typer: Standard or Electric</p> 
 
   
        
-<b>2. <a href="https://geohub.lacity.org/datasets/230abc621b144dbc96cca83d65bd454d/explore?location=34.033311%2C-118.317725%2C10.87
+<b> 2. <a href="https://geohub.lacity.org/datasets/230abc621b144dbc96cca83d65bd454d/explore?location=34.033311%2C-118.317725%2C10.87
 ">LA Bikeways data</a></b>
  
-This website contains the data on existing bikeways in Los Angeles. It was downloaded as a CSV or GeoJSON file. We used this as one of the layers in our map, so users can easily understand which roads currently have bike lanes.
+<p> This website contains the data on existing bikeways in Los Angeles. It was downloaded as a CSV or GeoJSON file. We used this as one of the layers in our map, so users can easily understand which roads currently have bike lanes.</p> 
 
 
 </body>
