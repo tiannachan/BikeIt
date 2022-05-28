@@ -5,12 +5,14 @@ html, body , .container {
   }
 
 .container {  display: grid;
-    grid-template-rows: 15% 85%;
+    grid-template-rows: 15% 75% 10%;
+    grid-template-columns: 50% 50%;
     gap: 8px 5px;
     grid-auto-flow: row;
     grid-template-areas:
-      "logo search"
-      "banner banner";
+      "logo logo"
+      "slideshow slideshow"
+      "menu menu";
   }
   
 h2 {
@@ -18,21 +20,26 @@ h2 {
 }
 
 /* *********************************************************
-  Search bar, Logo and Banner Section
+  Search bar, Logo and Slideshow Section
 ********************************************************* */
     .logo {
-        border-radius: 50%;
+        grid-area: logo;
         background: linear-gradient(to bottom left, dark-blue 15%, light-blue);
         position: relative;
     }
     
-    .banner { 
+    .slideshow { 
     grid-auto-flow: row;
-    grid-area: banner;
+    grid-area: slideshow;
     border-radius: 3px;
-    min-width: 100%;
     }
 
+    .menu {
+      grid-auto-flow: row;
+      grid-area: menu;
+      border-radius: 3px;
+      min-width: 100%;
+  }
 
   .button {
     border: none;
