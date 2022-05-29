@@ -13,11 +13,11 @@ body,html {
 body {
 	display: grid;
 	grid-template-rows: 70px 1fr 30px;
-	grid-template-columns: 20% 60% 20%;
+	grid-template-columns: 22% 78%;
 	grid-template-areas: 
-	"menu menu menu"
-	"sidebar content content"
-	"sidebar footer footer";
+	"menu menu "
+	"sidebar content "
+	"sidebar footer ";
 }
 
 /* *********************************************************
@@ -87,7 +87,38 @@ ul {
   font-family: 'Ropa Sans';
 }
 
+.button-3-grey {
+  appearance: none;
+  background-color: grey;
+  border: 0.5px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-family: 'Ropa Sans';
+}
+
 .button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3-grey:focus:not(:focus-visible):not(.focus-visible) {
   box-shadow: none;
   outline: none;
 }
@@ -98,7 +129,18 @@ ul {
 	transition: all 0.5s ease-in-out;
 }
 
+.button-3-grey:hover {
+	background: #e0e0e0;
+	color: black;
+	transition: all 0.5s ease-in-out;
+}
+
 .button-3:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3-grey:focus {
   box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
   outline: none;
 }
@@ -110,7 +152,19 @@ ul {
   cursor: default;
 }
 
+.button-3-grey:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
 .button-3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.button-3-grey:active {
   background-color: #298e46;
   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
@@ -159,3 +213,108 @@ ul {
 	border-radius: 30px;
 	background-color: rgb(175, 175, 175);
 }
+
+
+
+/* Dropdown Button */
+.dropbtn-red {
+  appearance: none;
+  background-color: rgba(255, 0, 0, 0.8);
+  border: 0.5px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-family: 'Ropa Sans';
+}
+
+.dropbtn-blue {
+  appearance: none;
+  background-color: rgba(0, 0, 255, 0.8);
+  border: 0.5px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-family: 'Ropa Sans';
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #e0e0e0;
+	color: black;
+	font-size: 105%;
+	transition: all 0.5s ease-in-out;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;
+  transition: all 0.5s ease-in-out;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn-red  {background-color: #e0e0e0;
+  color: black;
+  font-size: 105%;
+  transition: all 0.3s ease-in-out;}
+
+.dropdown:hover .dropbtn-blue  {background-color: #e0e0e0;
+  color: black;
+  font-size: 105%;
+  transition: all 0.3s ease-in-out;}

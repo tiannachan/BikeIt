@@ -25,6 +25,11 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
 
+	<!-- js-grid -->
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css" />
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.min.css" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
+
 </head>
 <body>
 	<div class="menu">
@@ -50,27 +55,50 @@
 			<p>Hover on the green roads to see the bike lane streets.</p>
 			<!-- <p>Use the toggle box on the upper right to select desirable layers.</p> -->
 			<p>Click to show or hide the station and bike lanes:</p>
-			<p align="center"><button class="button-3" role="button" onclick= (mapBikeLane(),mapStation()) >Show</button>/<button class="button-3" role="button" onclick= (laneLayer.clearLayers(),stationLayer.clearLayers())>Hide</button></p>
+			<p align="center"><button class="button-3" role="button" onclick= (mapBikeLane(),mapStation()) >Show</button>/<button class="button-3-grey" role="button" onclick= (laneLayer.clearLayers(),stationLayer.clearLayers())>Hide</button></p>
 
-		<div class="sidebar-box">
+			<p>See the change in stations popularity:</p>
+			<div class="dropdown">
+				<button class="dropbtn-red"> Start Stations ▽ </button>
+				<div class="dropdown-content">
+				  <a href="#" onclick="newmapStart('2021_q2_count')">2021 Quarter 2</a>
+				  <a href="#" onclick="newmapStart('2021_q3_count')">2021 Quarter 3</a>
+					<a href="#" onclick="newmapStart('2021_q4_count')">2021 Quarter 4</a>
+					<a href="#" onclick="newmapStart('2022_q1_count')">2022 Quarter 1</a>
+					<a href="#" onclick="mapStart()">Total</a>
+				</div>
+			</div>
+
+			<div class="dropdown">
+				<button class="dropbtn-blue">End Stations ▽ </button>
+				<div class="dropdown-content">
+				  <a href="#" onclick="newmapEnd('2021_q2_count')">2021 Quarter 2</a>
+				  <a href="#" onclick="newmapEnd('2021_q3_count')">2021 Quarter 3</a>
+					<a href="#" onclick="newmapEnd('2021_q4_count')">2021 Quarter 4</a>
+					<a href="#" onclick="newmapEnd('2022_q1_count')">2022 Quarter 1</a>
+					<a href="#" onclick="mapEnd()">Total</a>
+				</div>
+			</div>
+
+<!-- <div class="sidebar-box">
 			<h3>Popular Start Stations</h3>
 			<div class="sidebar-item" onclick="newmapStart('2021_q2_count')">2021 Quarter 2</div>
 			<div class="sidebar-item" onclick="newmapStart('2021_q3_count')">2021 Quarter 3</div>
 			<div class="sidebar-item" onclick="newmapStart('2021_q4_count')">2021 Quarter 4</div>
 			<div class="sidebar-item" onclick="newmapStart('2022_q1_count')">2022 Quarter 1</div>
 			<div class="sidebar-item" onclick="mapStart()">Total</div>
-		</div>
+		</div> -->
 
 		<br>
 
-		<div class="sidebar-box">
+		<!-- <div class="sidebar-box">
 			<h3>Popular End Stations</h3>
 			<div class="sidebar-item" onclick="newmapEnd('2021_q2_count')">2021 Quarter 2</div>
 			<div class="sidebar-item" onclick="newmapEnd('2021_q3_count')">2021 Quarter 3</div>
 			<div class="sidebar-item" onclick="newmapEnd('2021_q4_count')">2021 Quarter 4</div>
 			<div class="sidebar-item" onclick="newmapEnd('2022_q1_count')">2022 Quarter 1</div>
 			<div class="sidebar-item" onclick="mapEnd()">Total</div>
-		</div>
+		</div> -->
 
 		<br>
 
@@ -92,6 +120,12 @@
 	<div class="content">
 		<div id="map"></div>
 	</div>
+
+
+
+
+
+
 	<div class="footer">
 		Data source: <a href="https://bikeshare.metro.net/about/data/">Metro Bike Share</a>;
         <a href="https://geohub.lacity.org/datasets/230abc621b144dbc96cca83d65bd454d/explore?location=34.033311%2C-118.317725%2C10.87">Bike Lanes</a>

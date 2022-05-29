@@ -320,3 +320,4 @@ function newmapEnd(variable){
 	endMarkers.addTo(map)
 
 }
+
