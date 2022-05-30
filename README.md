@@ -12,7 +12,7 @@ Our goal is to examine the trends of bike-share usage and look for solutions to 
  
 **Yin Ue "Tianna" Chan** <br>
 <img src="images/team/Tianna.jpeg" width="200"> <br>
-Yin Ue “Tianna” Chan (she/her/hers) is a senior pursuing a B.S. in Mathematics/Economics with a minor in Digital Humanities. She is a hard-working individual who is always looking for opportunities to improve her skills. After graduation, she hopes to leverage her analytical, critical thinking, and problem-solving skills in the business world and build a better community.
+Yin Ue “Tianna” Chan (she/her/hers) is a senior pursuing a B.S. in Math/Econ with a minor in Digital Humanities. She is always looking for opportunities to improve her skills. After graduation, she hopes to leverage her analytical, critical thinking, and problem-solving skills in the business world and build a better community.
  
 **Irvin Ramirez** <br>
 <img src="images/team/Irvin.jpeg" width="200"> <br>
@@ -36,14 +36,10 @@ This is also important to current bike-share users, as the analysis can potentia
 To others, it is important to understand the bike-sharing situation in Los Angeles, to know the benefits of bike-sharing, and also to persuade them to change their commute!
  
 <i> Potential Research Questions: </i>
-1. How does the popularity of start and end locations correlates with land use?  <br>
-2. How efficient was the program contribute to the benefit of the community? <br>
-3. What are the ways Metro can do to increase trip duration, pass sales, and improve the program in general?  <br>
-4. How popular is the Metro bike sharing program and which areas ? <br>
-5. How can Metro improve the ride sharing services in neighborhoods with the least bike friendly roads ? <br>
-6. Compare and contrast services in low income vs high income areas
-
- 
+1. How efficient was the program contribute to the benefit of the community? <br>
+2. What are the ways Metro can do to increase trip duration, pass sales, and improve the program in general?  <br>
+3. How popular is the Metro bike sharing program and which areas ? <br>
+4. How can Metro improve the ride sharing services in neighborhoods with the least bike friendly roads ? <br>
  
 ## Methodology
 We decided to choose web mapping as a methodology of inquiry because the various land uses in different regions of Los Angeles can tell a different story in regards to bike-share usage. Furthermore, we plan to also include visualization charts to uncover other trends as supplemental information.
