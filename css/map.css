@@ -15,7 +15,7 @@ body {
 	grid-template-rows: 15% 1fr 30px;
 	grid-template-columns: 22% 78%;
 	grid-template-areas: 
-	"menu menu "
+	"logo menu "
 	"sidebar mapcontent "
 	"sidebar footer ";
 }
