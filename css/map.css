@@ -12,7 +12,7 @@ body,html {
 
 body {
 	display: grid;
-	grid-template-rows: 15% 1fr 30px;
+	grid-template-rows: 13% 81% 6%;
 	grid-template-columns: 22% 78%;
 	grid-template-areas: 
 	"logo menu "
