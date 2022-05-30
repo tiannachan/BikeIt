@@ -1,52 +1,35 @@
- /* Source: https://www.w3schools.com/howto/howto_css_blog_layout.asp/ */
+html, body , .container {
+  height: 100%;
+  margin: 10px;
+  font-family: 'Ropa Sans';
+}
 
-body { 
-    font-family: 'Ropa Sans';
-    padding: 20px;
-    margin: 5px;
-    background: white;
-  }
-  
+.container {  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 0.2fr 2fr;
+  gap: 8px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo menu"
+    "blog blog";
+}
 
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
-  .leftcolumn {
-    float: left;
-    width: 60%;
-    padding: 0 10px 0 0;
-  }
-  
-  /* Right column */
-  .rightcolumn {
-    float: right;
-    width: 40%;
-    padding: 0 10px 0 0;
-  }
-  
-  /* Add a card effect for articles */
+
+.blog {
+  grid-area: blog;
+}
+
+.menu {
+  grid-area: menu;
+}
+
   .card {
     background-color: #f1f1f1;
     padding: 20px;
     margin-top: 20px;
   }
   
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 100px) {
-    .leftcolumn, .rightcolumn {
-      width: 100%;
-      padding: 0;
-    }
-  }
-
-   /* *********************************************************
+/* *********************************************************
   Menu Section
 ********************************************************* */
 
@@ -216,4 +199,32 @@ input[type="checkbox"]{
   grid-area: logo;
   background: linear-gradient(to bottom left, dark-blue 15%, light-blue);
   position: relative;
+}
+
+
+/* *********************************************************
+  Sticky Header
+********************************************************* */
+
+.header {
+  padding: 10px 16px;
+  background: rgb(255, 255, 255);
+  color: #f1f1f1;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
 }
