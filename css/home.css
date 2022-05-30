@@ -20,7 +20,7 @@ h2 {
 }
 
 /* *********************************************************
-  Search bar, Logo and Slideshow Section
+ Logo and Slideshow Section
 ********************************************************* */
     .logo {
         grid-area: logo;
@@ -64,8 +64,6 @@ h2 {
   Menu Section
 ********************************************************* */
 *{
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: 'Ropa Sans';
 }
@@ -80,7 +78,7 @@ h2 {
   /*background: linear-gradient(90deg, #f92c78, #4114a1);*/
   /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
  /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
-  transition: all 0.6s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 #active:checked ~ .wrapper{
   /*left: 0;*/
