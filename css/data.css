@@ -18,7 +18,8 @@ html, body , .container {
   
   p {
     margin:20px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 25px;
   }
 
 /* *********************************************************
@@ -215,6 +216,7 @@ td, th {
   border: 1px solid #ccc;
   text-align: center;
   padding: 5px;
+  font-size: 16px;
 }
 
 th {
