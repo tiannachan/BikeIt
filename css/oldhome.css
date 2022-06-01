@@ -1,0 +1,65 @@
+html, body , .container {
+    height: 100%;
+    margin: 5px;
+    font-family: 'Ropa Sans';
+  }
+
+.container {  display: grid;
+    grid-template-rows: 15% 75% 10%;
+    grid-template-columns: 50% 50%;
+    gap: 8px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo logo"
+      "slideshow slideshow"
+      "menu menu";
+  }
+  
+h2 {
+    text-align: center;
+}
+
+/* *********************************************************
+ Logo and Slideshow Section
+********************************************************* */
+    .logo {
+        grid-area: logo;
+        background: linear-gradient(to bottom left, dark-blue 15%, light-blue);
+        position: relative;
+    }
+    
+    .slideshow { 
+    grid-auto-flow: row;
+    grid-area: slideshow;
+    border-radius: 3px;
+    }
+
+    .menu {
+      grid-auto-flow: row;
+      grid-area: menu;
+      border-radius: 3px;
+      min-width: 100%;
+  }
+
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 12px;
+    color: white;
+    background-image:url(https://github.com/tiannachan/BikeIt/blob/106fd2206ef8da36812017cedee75ae426583713/images/lane.jpeg?raw=true);
+    background-color: #59aa84;
+    text-align: center;
+    cursor: pointer;
+    width: 19.78%;
+    border-radius: 20px;
+  }
+  
+  .button:hover, .button::selection {
+    background-image:url(https://github.com/tiannachan/BikeIt/blob/106fd2206ef8da36812017cedee75ae426583713/images/lanewithbike.jpeg?raw=true);
+    transition: all 0.3s ease-in-out;
+  }
+
+/* *********************************************************
+  Menu Section
+********************************************************* */

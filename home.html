@@ -1,79 +1,36 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <title>Metro Bike Share Analysis</title>
-    <meta charset="utf-8" />
-    
-    <!-- style sheets -->
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ropa+Sans">
-
-    <!-- Slideshow -->
-    <link rel="stylesheet" href="split-slick-slideshow/css/style.css">
-    
-    <!-- leaflet -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        
-    <!-- Leaflet-Ajax for GeoJSON -->
-    <script src="js/leaflet.ajax.min.js"></script>
-    
-    <!-- papaparse for csv data -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
-
-
-    </head>
-
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <title>Metro Bike Share Analysis</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ropa+Sans">
+</head>
 
 <body>
-<div class="container">
+
+  <header class="container">
+    <nav>
+
+    </nav>
+  </header>
   
-<!-- Logo -->
-  <div class="logo">
-    <a href="home.html"><img src="images/icon/BikeItLogo.png" width="195px"></a>
-    <i>An analysis for Metro Bike Share Stations and Usage (2021 Q2 - 2022 Q1)</i>
+
+  <div class="container">
+      <div class="intro">
+        <img src="images/icon/bikeitlogowhite.png">
+        <p>
+          <i>An analysis for Metro Bike Share Stations and Usage (2021 Q2 - 2022 Q1)</i>
+
+        </p>
+        <br>
+        <a href="data.html" class="btn">Enter</a> 
+      </div>
   </div>
-  
-    
-<!-- Slideshow -->
-<div class="slideshow">
-
-    <img src="images/bike-share-hero.jpeg" style="width:100%; border-radius: 20%;">
-
-</div>
 
 
-<!-- Menu buttons -->
-<div class="menu">
-    <a href="data.html"><button class="button">Data</button></a>
-    <a href="map.html"><button class="button">Map</button></a>
-    <a href="analysis.html"><button class="button">Analysis</button></a>
-    <a href="blog.html"><button class="button">Blog</button></a>
-    <a href="about.html"><button class="button">About</button></a>
-</div>
-
-<!-- Main menu -->
-    <input type="checkbox" id="active">
-    <label for="active" class="menu-btn"><span></span></label>
-    <label for="active" class="close"></label>
-    <div class="wrapper">
-      <ul>
-        <li><a class="active" href="home.html">Home</a></li>
-        <li><a href="data.html">Data</a></li>
-        <li><a href="map.html">Map</a></li>
-        <li><a href="analysis.html">Analysis</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-</div>
-
-    <script src="js/home.js"></script>
 </body>
 </html>
+
+
+
