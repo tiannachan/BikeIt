@@ -17,6 +17,7 @@ html, body , .container {
 
 .blog {
   grid-area: blog;
+  margin: 100px;
 }
 
 .menu {

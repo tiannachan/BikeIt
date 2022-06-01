@@ -296,6 +296,7 @@ body {
   right: -100%;
   height: 100%;
   width: 100%;
+  
   background: rgb(0,128,26);
   /*background: linear-gradient(90deg, #f92c78, #4114a1);*/
   /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
@@ -305,6 +306,7 @@ body {
 #active:checked ~ .wrapper{
   /*left: 0;*/
   right:0;
+  
 }
 .menu-btn{
   position: absolute;
@@ -444,7 +446,7 @@ input[type="checkbox"]{
 }
 #active:checked ~ .wrapper ul li a{
 	transform: none;
-	transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1); /* easeOutBackを緩めた感じ */
+	transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1); /* easeOutBack */
    transition-delay: .6s;
   transform: translateX(-100px);
 }
