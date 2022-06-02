@@ -57,6 +57,7 @@ html, body , .container {
 #active:checked ~ .wrapper{
   /*left: 0;*/
   right:0;
+  z-index: 1;
 }
 .menu-btn{
   position: absolute;
