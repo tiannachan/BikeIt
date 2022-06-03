@@ -7,17 +7,17 @@ body,html {
 
 #map {
 	height: 100%;
-	border-radius: 30px 30px 0px 0px;
-
+  z-index: -9999;
 }
 
 body {
 	display: grid;
-	grid-template-rows: 13% 81% 6%;
+	grid-template-rows: 13% 7% 74% 6%;
 	grid-template-columns: 22% 78%;
 	grid-template-areas: 
 	"logo menu "
-	"sidebar mapcontent "
+	"sidebar explore"
+  "sidebar mapcontent"
 	"sidebar footer ";
 }
 
@@ -143,9 +143,10 @@ body {
 	border-radius: 30px;
 	background-color: rgb(92, 86, 86);
     overflow: auto;
+  line-height: 25px;
 }
 
-.sidebar-item{
+/* .sidebar-item{
 	padding: 10px;
 	background: rgb(0,170,113);
 	color: white;
@@ -167,7 +168,7 @@ body {
     background-color: rgb(0,128,26);
     border-radius: 20px;
 	padding: 10px;
-}
+} */
 
 .mapcontent {
 	grid-area: mapcontent;
@@ -176,11 +177,37 @@ body {
 .footer {
 	grid-area: footer;
 	padding:10px;
-	border-radius: 0px 0px 30px 30px;
+	border-radius: 0px 0px 20px 20px;
 	background-color: rgb(175, 175, 175);
+  padding:10px;
+  font-size: smaller;
 }
 
+.explore{
+	grid-area: explore;
+	padding:10px;
+	border-radius: 30px 30px 0px 0px;
+	background-color: rgb(220, 225, 226);
+  text-align: center;
+  letter-spacing: 2px;
+}
 
+.explore-item{
+	padding: 5px;
+	background: rgb(0,170,113);
+	color: white;
+	margin: 6px;
+	cursor: pointer;
+	border-radius: 10px;
+  display: inline-block;
+}
+
+.explore-item:hover {
+	background: #e0e0e0;
+	color: black;
+	font-size: 105%;
+	transition: all 0.5s ease-in-out;
+}
 
 /* Dropdown Button */
 .dropbtn-red {
