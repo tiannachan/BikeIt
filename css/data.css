@@ -256,4 +256,6 @@ th {
 
 
 
-
+.tableauPlaceholder {
+  z-index: -9999;
+}
