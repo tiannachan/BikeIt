@@ -107,7 +107,7 @@ function mapStation(){
         </table>
         <br>
         <p>Docks Available: ${feature.properties.docksAvailable}</p>
-        <br>`)
+        `)
     }
 }
 
