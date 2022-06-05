@@ -205,16 +205,16 @@ body {
 }
 
 .explore-item:hover {
-	background: #e0e0e0;
+	background: #ffffff;
 	color: black;
-	font-size: 105%;
-	transition: all 0.5s ease-in-out;
+	font-size: 100%;
+	transition: all 0.5s ;
 }
 
 .explore-item:active {
 	background: #e0e0e0;
 	color: black;
-	font-size: 105%;
+	font-size: 100%;
 }
 
 /* Dropdown Button */
@@ -301,7 +301,7 @@ body {
 .dropdown-content a:hover {
   background-color: #e0e0e0;
 	color: black;
-	font-size: 105%;
+	font-size: 100%;
 	transition: all 0.5s ease-in-out;
 }
 
@@ -312,12 +312,12 @@ body {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn-red  {background-color: #e0e0e0;
   color: black;
-  font-size: 105%;
+  font-size: 100%;
   transition: all 0.3s ease-in-out;}
 
 .dropdown:hover .dropbtn-blue  {background-color: #e0e0e0;
   color: black;
-  font-size: 105%;
+  font-size: 100%;
   transition: all 0.3s ease-in-out;}
 
 
