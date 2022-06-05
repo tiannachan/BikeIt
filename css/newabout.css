@@ -2,10 +2,46 @@ html, body , .container {
     height: 100%;
     margin: 5px;
     font-family: 'Ropa Sans';
+    
   }
 
 
-/* button */
+
+/* *********************************************************
+  Sticky Header
+********************************************************* */
+.header {
+  grid-area: header;
+  padding: 10px 16px;
+  background: rgb(255, 255, 255);
+  color: #f1f1f1;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+  z-index: -1;
+}
+
+
+
+
+
+/* *********************************************************
+ Proposal Button
+********************************************************* */
 .button {
     border: none;
     outline: 0;
@@ -24,7 +60,9 @@ html, body , .container {
   }
   
 
-/* Team Cards */
+/* *********************************************************
+  Team Cards
+********************************************************* */
 
 *,
 *::before,
@@ -620,4 +658,6 @@ input[type="checkbox"]{
     transform: translateX(-100px);
     
   }
+
+
   
