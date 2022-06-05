@@ -115,3 +115,6 @@ nav a:hover{
   color: var(--bg)
 
 }
+
+@keyframes bounce { 0% { transform: translateY(0); } 100% { transform: translateY(-30px); } }
+#bounce { animation: bounce 0.8s infinite alternate; }
