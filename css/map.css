@@ -7,7 +7,7 @@ body,html {
 
 #map {
 	height: 100%;
-  z-index: 0;
+  z-index: -1;
 }
 
 body {
@@ -191,7 +191,6 @@ body {
   text-align: center;
   letter-spacing: 1.5px;
   font-size: 16px;
-  z-index: -1;
 }
 
 .explore-item{
@@ -202,6 +201,7 @@ body {
 	cursor: pointer;
 	border-radius: 10px;
   display: inline-block;
+  z-index: 0;
 }
 
 .explore-item:hover {
