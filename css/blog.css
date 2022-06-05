@@ -229,3 +229,36 @@ input[type="checkbox"]{
 .sticky + .content {
   padding-top: 102px;
 }
+
+
+.section-title{
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  text-align: center;
+}
+.section-title h1{
+  display: inline-block;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 5px;
+  position: relative;
+  z-index: -1;
+}
+.section-title h1::before{
+  content: '';
+  left: 95px;
+  position: absolute;
+  height: 3px;
+  right: 32%;
+  background-color: rgb(0,128,26);
+  bottom: -5px;
+  z-index: -1;
+
+}
+.container .section-title h1::before{
+  left: 30%;
+}
