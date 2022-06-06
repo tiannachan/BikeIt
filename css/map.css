@@ -12,10 +12,11 @@ body,html {
 
 body {
 	display: grid;
-	grid-template-rows: 13% 7% 73% 5%;
+	grid-template-rows: 13% 8% 7% 73% 5%;
 	grid-template-columns: 22% 78%;
 	grid-template-areas: 
 	"logo menu "
+  "header header"
 	"sidebar explore"
   "sidebar mapcontent"
 	"sidebar footer ";
@@ -493,4 +494,38 @@ input[type="checkbox"]{
   grid-area: logo;
   background: linear-gradient(to bottom left, dark-blue 15%, light-blue);
   position: relative;
+}
+
+.header {
+	grid-area: header;
+}
+
+.section-title{
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+}
+.section-title h1{
+  display: inline-block;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 5px;
+  position: relative;
+  z-index: -1;
+}
+.section-title h1::before{
+  content: '';
+  left: 45px;
+  position: absolute;
+  height: 3px;
+  right: 32%;
+  background-color: rgb(0,128,26);
+  bottom: -5px;
+  z-index: -1;
+
+}
+.container .section-title h1::before{
+  left: 30%;
 }
