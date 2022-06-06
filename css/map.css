@@ -12,7 +12,7 @@ body,html {
 
 body {
 	display: grid;
-	grid-template-rows: 13% 8% 7% 73% 5%;
+	grid-template-rows: 12.3% 7.5% 6.6% 68.9% 4.7%;
 	grid-template-columns: 22% 78%;
 	grid-template-areas: 
 	"logo menu "
@@ -92,12 +92,14 @@ body {
 .button-3:hover {
 	background: #e0e0e0;
 	color: black;
+  font-size: 105%;
 	transition: all 0.5s ease-in-out;
 }
 
 .button-3-grey:hover {
 	background: #e0e0e0;
 	color: black;
+  font-size: 105%;
 	transition: all 0.5s ease-in-out;
 }
 
@@ -206,9 +208,9 @@ body {
 }
 
 .explore-item:hover {
-	background: #ffffff;
+	background: rgb(220, 225, 226);
 	color: black;
-	font-size: 100%;
+	font-size: 105%;
 	transition: all 0.5s ;
 }
 
@@ -313,13 +315,13 @@ body {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn-red  {background-color: #e0e0e0;
   color: black;
-  font-size: 100%;
-  transition: all 0.3s ease-in-out;}
+  font-size: 105%;
+  transition: all 0.5s ease-in-out;}
 
 .dropdown:hover .dropbtn-blue  {background-color: #e0e0e0;
   color: black;
-  font-size: 100%;
-  transition: all 0.3s ease-in-out;}
+  font-size: 105%;
+  transition: all 0.5s ease-in-out;}
 
 
   /* *********************************************************
@@ -528,4 +530,9 @@ input[type="checkbox"]{
 }
 .container .section-title h1::before{
   left: 30%;
+}
+
+
+.row{
+  text-align: center;
 }
