@@ -14,6 +14,14 @@ html, body , .container {
     "blog blog";
 }
 
+/* *********************************************************
+  Grid Sections
+********************************************************* */
+.card {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-top: 20px;
+}
 
 .blog {
   grid-area: blog;
@@ -25,11 +33,11 @@ html, body , .container {
   grid-area: menu;
 }
 
-  .card {
-    background-color: #f1f1f1;
-    padding: 20px;
-    margin-top: 20px;
-  }
+.logo {
+  grid-area: logo;
+  background: linear-gradient(to bottom left, dark-blue 15%, light-blue);
+  position: relative;
+}
   
 /* *********************************************************
   Menu Section
@@ -88,7 +96,6 @@ html, body , .container {
 .menu-btn:after{
   transform: translateY(8px);
 }
-
 
 .close {
 	z-index: 1;
@@ -195,15 +202,6 @@ input[type="checkbox"]{
   transform: translateX(-100px);
 }
 
-
-
-.logo {
-  grid-area: logo;
-  background: linear-gradient(to bottom left, dark-blue 15%, light-blue);
-  position: relative;
-}
-
-
 /* *********************************************************
   Sticky Header
 ********************************************************* */
@@ -233,7 +231,9 @@ input[type="checkbox"]{
   padding-top: 10px;
 }
 
-
+/* *********************************************************
+  Title Section
+********************************************************* */
 .section-title{
   flex: 0 0 100%;
   max-width: 100%;

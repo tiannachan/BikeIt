@@ -22,11 +22,34 @@ body {
 	"sidebar footer ";
 }
 
-/* *********************************************************
-  Sidebar Section
-********************************************************* */
+.mapcontent {
+	grid-area: mapcontent;
+}
 
-/* CSS */
+.footer {
+	grid-area: footer;
+	padding:10px;
+	border-radius: 0px 0px 20px 20px;
+	background-color: rgb(175, 175, 175);
+  padding:10px;
+  font-size: 15px;
+  line-height: 16.5px;
+}
+
+
+/* *********************************************************
+  Sidebar and buttons section
+********************************************************* */
+.sidebar {
+	color: white;
+	grid-area: sidebar;
+	padding:20px;
+	border-radius: 30px;
+	background-color: rgb(92, 86, 86);
+    overflow: auto;
+  line-height: 25px;
+}
+
 .button-3 {
   appearance: none;
   background-color: #2ea44f;
@@ -137,55 +160,9 @@ body {
   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
 
-
-.sidebar {
-	color: white;
-	grid-area: sidebar;
-	padding:20px;
-	border-radius: 30px;
-	background-color: rgb(92, 86, 86);
-    overflow: auto;
-  line-height: 25px;
-}
-
-/* .sidebar-item{
-	padding: 10px;
-	background: rgb(0,170,113);
-	color: white;
-	margin: 6px;
-	cursor: pointer;
-	border-radius: 10px;
-}
-
-.sidebar-item:hover {
-	background: #e0e0e0;
-	color: black;
-	font-size: 105%;
-	transition: all 0.5s ease-in-out;
-}
-
-.sidebar-box{
-	color: white;
-	text-align: center;
-    background-color: rgb(0,128,26);
-    border-radius: 20px;
-	padding: 10px;
-} */
-
-.mapcontent {
-	grid-area: mapcontent;
-}
-
-.footer {
-	grid-area: footer;
-	padding:10px;
-	border-radius: 0px 0px 20px 20px;
-	background-color: rgb(175, 175, 175);
-  padding:10px;
-  font-size: 15px;
-  line-height: 16.5px;
-}
-
+/* *********************************************************
+  Explore section
+********************************************************* */
 .explore{
 	grid-area: explore;
 	padding:10px;
@@ -220,6 +197,10 @@ body {
 	font-size: 100%;
 }
 
+
+/* *********************************************************
+  Dropdown section
+********************************************************* */
 /* Dropdown Button */
 .dropbtn-red {
   appearance: none;
@@ -273,7 +254,6 @@ body {
   font-family: 'Ropa Sans';
 }
 
-
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
@@ -323,8 +303,15 @@ body {
   font-size: 105%;
   transition: all 0.5s ease-in-out;}
 
+/* *********************************************************
+  Row for the dropdown boxes stay in the center
+********************************************************* */
+.row{
+  text-align: center;
+}
 
-  /* *********************************************************
+
+/* *********************************************************
   Menu Section
 ********************************************************* */
 
@@ -384,7 +371,6 @@ body {
 .menu-btn:after{
   transform: translateY(8px);
 }
-
 
 .close {
 	z-index: 1;
@@ -502,6 +488,9 @@ input[type="checkbox"]{
 	grid-area: header;
 }
 
+/* *********************************************************
+  Title Section
+********************************************************* */
 .section-title{
   flex: 0 0 100%;
   max-width: 100%;
@@ -532,7 +521,3 @@ input[type="checkbox"]{
   left: 30%;
 }
 
-
-.row{
-  text-align: center;
-}
