@@ -16,7 +16,7 @@ Yin Ue “Tianna” Chan (she/her/hers) is a senior pursuing a B.S. in Math/Econ
  
 **Irvin Ramirez** <br>
 <img src="images/team/Irvin.jpeg" width="200"> <br>
-Irvin Ramirez is a senior pursuing a B.A. in Sociology. He is a student who is interested in GIS and Urban Planning and hopes to improve his skills with web mapping through this course. After graduation, he plans on working on enhancing his skills in web development before applying to graduate school.
+Irvin Ramirez (he/him/his) is a senior pursuing a B.A. in Sociology. He is a student who is interested in GIS and Urban Planning and hopes to improve his skills with web mapping through this course. After graduation, he plans on working on enhancing his skills in web mapping and development before applying to graduate school.
  
 **Leonela Aguilar** <br>
 <img src="images/team/Leonela.jpeg" width="200"> <br>
