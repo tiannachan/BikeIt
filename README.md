@@ -21,10 +21,6 @@ Irvin Ramirez (he/him/his) is a senior pursuing a B.A. in Sociology. He is a stu
 **Leonela Aguilar** <br>
 <img src="images/team/Leonela.jpeg" width="200"> <br>
 Leonela Aguilar(she/her/hers) is a fourth-year transfer student majoring in Sociology and minoring in Digital Humanities. She is currently interested in developing web-building skills and expanding her tech skills. Post-grad, she plans on immersing herself in the tech industry where she also hopes to represent more Latina women in the field. 
- 
-**Michelle Kung** <br>
-<img src="images/team/Michelle.jpeg" width="200"> <br>
-Michelle Kung is a fourth year sociology major from Hong Kong. She is interested in exploring how people interact and socialise under the digital environment. After graduation she hopes to leverage her digital skills and sociological understanding to help NGOs build digital campaigns.
                     
 ## Overview
 The research inquiry focuses on the trends of bike-share usage in Los Angeles from 2021 April to 2022 March. 
